@@ -27,6 +27,8 @@ namespace Web.Controllers
             }
             catch (Exception e)
             {
+                // the error will be processed further
+
                 throw new HttpResponseException(new HttpResponseMessage(HttpStatusCode.InternalServerError)
                 {
                     ReasonPhrase = e.Message
